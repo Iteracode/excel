@@ -1,9 +1,9 @@
 <?php
 
-namespace Cewi\Excel\Test\TestCase\View\Helper;
+namespace Iteracode\Excel\Test\TestCase\View\Helper;
 
-use Cewi\Excel\View\Helper\ExcelHelper;
-use Cewi\Excel\View;
+use Iteracode\Excel\View\Helper\ExcelHelper;
+use Iteracode\Excel\View;
 use Cake\TestSuite\TestCase;
 use Cake\ORM\TableRegistry;
 use Cake\I18n\FrozenTime;
@@ -14,7 +14,7 @@ use Cake\I18n\FrozenTime;
 class ExcelHelperTest extends TestCase
 {
 
-    public $fixtures = ['plugin.Cewi/Excel.articles'];
+    public $fixtures = ['plugin.Iteracode/Excel.articles'];
 
     /**
      * setUp method
@@ -50,7 +50,7 @@ class ExcelHelperTest extends TestCase
     public function testInitialization()
     {
         // is the correct Object loaded?
-        $this->assertInstanceOf('Cewi\Excel\View\Helper\ExcelHelper', $this->Excel);
+        $this->assertInstanceOf('Iteracode\Excel\View\Helper\ExcelHelper', $this->Excel);
     }
 
     /**

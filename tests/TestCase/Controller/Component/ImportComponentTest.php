@@ -1,7 +1,7 @@
 <?php
-namespace Cewi\Excel\Test\TestCase\Controller\Component;
+namespace Iteracode\Excel\Test\TestCase\Controller\Component;
 
-use Cewi\Excel\Controller\Component\ImportComponent;
+use Iteracode\Excel\Controller\Component\ImportComponent;
 use Cake\Controller\ComponentRegistry;
 use Cake\TestSuite\TestCase;
 
@@ -42,6 +42,6 @@ class ImportComponentTest extends TestCase
      */
     public function testInitialization()
     {
-        $this->assertInstanceOf('\Cewi\Excel\Controller\Component\ImportComponent', $this->Import);
+        $this->assertInstanceOf('\Iteracode\Excel\Controller\Component\ImportComponent', $this->Import);
     }
 }

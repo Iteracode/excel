@@ -65,4 +65,4 @@ Cache::config([
     ]
 ]);
 
-Plugin::load('Cewi/Excel', ['path' => ROOT]);
+Plugin::load('Iteracode/Excel', ['path' => ROOT]);

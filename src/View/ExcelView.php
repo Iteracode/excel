@@ -1,6 +1,6 @@
 <?php
 
-namespace Cewi\Excel\View;
+namespace Iteracode\Excel\View;
 
 use Cake\Core\Exception\Exception;
 use Cake\Event\EventManager;
@@ -82,7 +82,7 @@ class ExcelView extends View
     {
         parent::initialize();
         $this->viewBuilder()->setLayout('default');
-        $this->loadHelper('Cewi/Excel.Excel');
+        $this->loadHelper('Iteracode/Excel.Excel');
     }
 
     /**

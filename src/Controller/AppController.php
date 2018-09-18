@@ -1,6 +1,6 @@
 <?php
 
-namespace Cewi\Excel\Controller;
+namespace Iteracode\Excel\Controller;
 
 use App\Controller\AppController as BaseController;
 

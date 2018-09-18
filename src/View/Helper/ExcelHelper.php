@@ -1,6 +1,6 @@
 <?php
 
-namespace Cewi\Excel\View\Helper;
+namespace Iteracode\Excel\View\Helper;
 
 use Cake\Collection\Collection;
 use Cake\Core\Configure;
@@ -19,7 +19,7 @@ use PHPExcel_Cell_DataType;
 /*
  * The MIT License
  *
- * Copyright 2015 cewi <c.wichmann@gmx.de>.
+ * Copyright 2015 Iteracode <c.wichmann@gmx.de>.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -47,7 +47,7 @@ use PHPExcel_Cell_DataType;
  *
  * Data may be an Entity, a Query Expression, a Collection of entitites or a flat Array
  *
- * @author cewi <c.wichmann@gmx.de>
+ * @author Iteracode <c.wichmann@gmx.de>
  */
 class ExcelHelper extends Helper
 {

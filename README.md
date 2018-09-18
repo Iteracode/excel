@@ -1,4 +1,4 @@
-# Cewi/Excel plugin for CakePHP 
+# Iteracode/Excel plugin for CakePHP 
 
 The plugin is based on the work of [dakota]
 (https://github.com/dakota/CakeExcel) and uses [PHPExcel](https://github.com/PHPOffice/PHPExcel) for the excel-related functionality. 
@@ -14,14 +14,14 @@ add
     "repositories": [
              {
                 "type": "vcs",
-                "url": "https://github.com/cewi/excel"
+                "url": "https://github.com/Iteracode/excel"
             }
         ] 
         
  to your composer.json because this package is not on packagist. Then in your console:
 
 ```
-composer require Cewi/Excel:dev-master
+composer require Iteracode/Excel:dev-master
 ```
 
 should fetch the plugin. 
@@ -29,7 +29,7 @@ should fetch the plugin.
 Load the Plugin in your bootstrap.php as ususal:
 
 ```
-	Plugin::load('Cewi/Excel', ['bootstrap' => true, 'routes'=>true]);
+	Plugin::load('Iteracode/Excel', ['bootstrap' => true, 'routes'=>true]);
 ```
 
 RequestHandler Component is configured by the Plugin's bootstrap file. If not you could do this this in your controller's initialize method, e.g.:
@@ -39,7 +39,7 @@ RequestHandler Component is configured by the Plugin's bootstrap file. If not yo
 		{
         		parent::initialize();
         		$this->loadComponent('RequestHandler', [
-            			'viewClassMap' => ['xlsx' => 'Cewi/Excel.Excel']
+            			'viewClassMap' => ['xlsx' => 'Iteracode/Excel.Excel']
         ]);
         	}
 ```
@@ -80,7 +80,7 @@ Example (assumed you have an article model and controller with the usual index-a
 Include the helper in ArticlesController:
 
 ```
-   public $helpers = ['Cewi/Excel.Excel'];
+   public $helpers = ['Iteracode/Excel.Excel'];
 ```
 
 add a Folder 'xlsx' in Template/Articles and create the file 'index.ctp' in this Folder. Include this snippet of code to get an excel-file with a single worksheet called 
@@ -107,7 +107,7 @@ Include the Import-Component in the controller:
      public function initialize()
      {
         parent::initialize();
-        $this->loadComponent('Cewi/Excel.Import');
+        $this->loadComponent('Iteracode/Excel.Import');
      }    
 
 than you can use the method

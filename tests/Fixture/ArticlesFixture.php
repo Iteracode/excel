@@ -1,6 +1,6 @@
 <?php
 
-namespace Cewi\Excel\Test\Fixture;
+namespace Iteracode\Excel\Test\Fixture;
 
 use Cake\TestSuite\Fixture\TestFixture;
 

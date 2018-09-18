@@ -1,12 +1,12 @@
 {
-    "name": "Cewi/Excel",
+    "name": "iteracode/excel",
     "description": "Excel plugin for CakePHP 3",
     "type": "cakephp-plugin",
     "keywords": [
         "cakephp",
         "excel"
     ],
-    "homepage": "https://github.com/cewi/excel",
+    "homepage": "https://github.com/iteracode/excel",
     "license": "MIT",
     "authors": [
         {
@@ -15,13 +15,13 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/cewi/excel/issues",
-        "source": "https://github.com/cewi/excel"
+        "issues": "https://github.com/iteracode/excel/issues",
+        "source": "https://github.com/iteracode/excel"
     },
     "require": {
         "php": ">=5.4",
         "cakephp/plugin-installer": "*",
-        "cakephp/cakephp": "~3.0",
+        "cakephp/cakephp": "3.4.*",
         "phpoffice/phpexcel": "1.8.*"
     },
     "require-dev": {

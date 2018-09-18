@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Cewi\\Excel\\": "src"
+            "Iteracode\\Excel\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cewi\\Excel\\Test\\": "tests",
+            "Iteracode\\Excel\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }

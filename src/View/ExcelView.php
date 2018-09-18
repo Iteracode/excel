@@ -32,7 +32,7 @@ class ExcelView extends View
 
     /**
      * The subdirectory.  Excel views are always in xlsx.
-     * 
+     *
      * @var string
      */
     public $subDir = 'xlsx';
@@ -81,13 +81,13 @@ class ExcelView extends View
     public function initialize()
     {
         parent::initialize();
-        $this->setLayout('default');
+        $this->viewBuilder()->setLayout('default');
         $this->loadHelper('Cewi/Excel.Excel');
     }
-    
+
     /**
      * [render description]
-     * 
+     *
      * @param  [type] $action [description]
      * @param  [type] $layout [description]
      * @param  [type] $file   [description]
@@ -96,7 +96,7 @@ class ExcelView extends View
     public function render($action = null, $layout = null, $file = null)
     {
         $content = parent::render($action, false, $file);
-        if ($this->response->getType() == 'text/html') {
+        if ($this->response->type() == 'text/html') {
             return $content;
         }
 
